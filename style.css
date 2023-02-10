@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #fff;
+  }
+  
+  p { 
+    color: #fff;
+    padding-left: 30px;
+  }
+  
+  span {
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .box p {
+    display: none;
+  }
+  
+  .Fitness-box {
+    width: 1500px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+  }
+  
+  .Fitness-img-box1 {
+    position: relative;
+    background-color: #283491;
+    flex-grow: 1;
+    /*flex-grow 하면 알아서 값을 나눠가짐*/
+    overflow: hidden;
+    transition: all 600ms ease-in-out;
+    }
+  
+  .Fitness-img-box1 h1 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .Fitness-img-box1 img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .Fitness-img-box2 {
+    position: relative;
+    background-color: #f18684;
+    flex-grow: 1;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+  }
+  
+  .Fitness-img-box2 h1 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .Fitness-img-box2 img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .Fitness-img-box3 {
+    position: relative;
+    background-color: #6ee2f1;
+    flex-grow: 1;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+  }
+  
+  .Fitness-img-box3 h1 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .Fitness-img-box3 img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .Fitness-box-button {
+    width: 100px;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    display: none;
+  }
+  
+  .Fitness-img-box1:hover,
+  .Fitness-img-box2:hover,
+  .Fitness-img-box3:hover {
+    flex-grow: 2;
+  }
+  
+  .Fitness-img-box1:hover p,
+  .Fitness-img-box2:hover p,
+  .Fitness-img-box3:hover p {
+    display: block;
+  }
+  
+  .Fitness-img-box1:hover div,
+  .Fitness-img-box2:hover div,
+  .Fitness-img-box3:hover div {
+    display: block;
+  }
+  
+  .Fitness-img-box1:hover h1,
+  .Fitness-img-box2:hover h1,
+  .Fitness-img-box3:hover h1 {
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 0;
+  }
