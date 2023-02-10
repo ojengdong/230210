@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-list {
+    display: flex;
+    width: 1000px;
+    height: 400px;
+    margin: 120px auto;
+}
+
+.card-item {
+    /* img를 위해서 position:relative */
+    position: relative;
+    /* flex : 아이템이 자신의 컨테이너가 차지하는 공간에 맞추기 위해
+     크기를 키우거나 줄이는 방법을 설정하는 속성 */
+    flex: 1;
+    padding: 25px;
+    color: #fff;
+    transition: all 500ms ease-in-out;
+}
+
+.card-item:nth-child(1) {
+    background-color: #283491;
+}
+
+.card-item:nth-child(2) {
+    background-color: #f18684;
+}
+
+.card-item:nth-child(3) {
+    background-color: #6ee2f1;
+}
+
+.card-item h2 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.caption {
+    display: none;
+    max-width: 230px;
+    font-size: 12px;
+    margin: 28px 0;
+}
+
+.caption button {
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    color: #fff;
+    padding: 8px 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.card-item img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+}
+
+.card-item:hover {
+    flex-grow: 2.5;
+}
+
+.card-item:hover .caption{
+    display: block;
+}
+
+.card-item:hover h2{
+    text-align: left;
+}
